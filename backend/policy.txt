@@ -1,0 +1,6 @@
+REFUND POLICY RULES:
+1. Refund Window: Refunds are only allowed within 30 days of the purchase date. Any request made after 30 days must be strictly denied.
+2. Condition Check: The product must not be damaged. If the product is marked as damaged (is_damaged = 1), the refund must be denied.
+3. Digital Product Exclusions: Digital products (e.g. software licenses, e-books, subscriptions) are strictly non-refundable.
+4. Customization Exclusions: Custom-made or personalized products (custom_made = 1) are strictly non-refundable.
+5. Large Amount Limits: Any refund amount exceeding $500.00 USD cannot be approved automatically. It requires special manager approval. In this case, mark the status as "Requires Manager Approval" rather than fully approved or denied.

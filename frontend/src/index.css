@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Kill browser's default blue focus rings and outlines globally */
+*, *::before, *::after {
+  outline-color: #D97706 !important;
+}
+
+::selection {
+  background-color: rgba(217, 119, 6, 0.35);
+  color: #fff;
+}
+
+/* Remove default blue link color */
+a { color: #FCD34D; }
+a:hover { color: #D97706; }
+
+@layer base {
+  body {
+    background-color: #0C0D0F;
+  }
+}
+
+/* Custom Scrollbar — Amber Gold accent */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141618;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252830;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D97706;
+}
+
+/* Glassmorphism — warm amber glow */
+.glass-panel {
+  background: rgba(20, 22, 24, 0.80);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(37, 40, 48, 0.6);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(217, 119, 6, 0.45);
+  box-shadow: 0 10px 32px -10px rgba(217, 119, 6, 0.18);
+  transform: translateY(-2px);
+}
+
+/* Animated gradient border for decision cards */
+.amber-glow {
+  box-shadow: 0 0 18px 2px rgba(217,119,6,0.18), 0 0 3px 0 rgba(217,119,6,0.4);
+}
+
+.teal-glow {
+  box-shadow: 0 0 18px 2px rgba(13,148,136,0.18), 0 0 3px 0 rgba(13,148,136,0.4);
+}
