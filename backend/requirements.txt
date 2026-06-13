@@ -6,3 +6,4 @@ python-dotenv
 langgraph
 langchain-core
 langchain-openai
+python-multipart
